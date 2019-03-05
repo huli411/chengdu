@@ -1,0 +1,434 @@
+body{
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #fff; 
+}
+body a{
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	text-decoration:none;
+	outline:none;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+	font-family: 'Gudea', sans-serif;
+}
+p{
+	margin:0;
+	font-size:1em;
+	line-height:1.9em;
+	color:#ff0;
+	letter-spacing:1px;
+}
+ul,label{
+	margin:0;
+    padding:0;
+    list-style: none;
+}
+body a:hover,body a:focus{
+	text-decoration:none;
+    outline: none;
+}
+/*-- banner --*/
+.agileits-banner{
+    background:url("../images/2.jpg") no-repeat center 0px;
+    -webkit-background-size:cover;
+	background-size:cover;
+	-moz-background-size:cover;
+	position: relative; 
+}
+/*-- logo --*/ 
+.w3llogo h1 {
+    font-size: 5em;
+    color: rgb(163, 22, 22);
+    position: relative;
+    letter-spacing: 15px;
+    margin-top: 8%;
+    padding: 0.3em;
+}
+.w3llogo h1 a{
+    color: #fff;
+}
+/*-- //logo --*/
+.tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/*-- top-nav --*/
+.w3menu.navbar-left {
+    margin-left: 12em;
+}
+.top-nav {
+    z-index: 999;
+    padding: 1em 0 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+nav.navbar.navbar-default {
+    background-color: inherit;
+    border: none;
+    margin: 0;
+}
+ul.nav.navbar {
+    text-align: center;
+    margin: 1.8em 0 0;
+    min-height: inherit; 
+}
+.top-nav ul li {
+    margin: 0 1.7em;
+    display: inline-block;
+    right:1%;
+    margin-top:10.4%;
+    text-align:center;
+}
+
+/* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 基于LeVelouo动画的HTTP://DabBLET.COM/GIST的文本填充 */
+.top-nav ul li a {
+    letter-spacing: 6px;
+    font-size: 1.3em;
+    color: #fff;
+    position: relative;
+    padding: 0;
+    display: inline-block;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background: none;
+} /*--没有背景图片--*/
+.top-nav ul li a:hover, .top-nav ul li .active{
+    color: #ff6b6b;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.top-nav .open > .dropdown-menu {
+    display: block;
+    background: rgba(0, 0, 0, 0.55);
+    margin-top: 1.3em;
+    left: -73%;
+}
+.top-nav .open > .dropdown-menu li {
+    margin: 0;
+	display: block;
+	overflow:hidden;
+}
+.top-nav .open > .dropdown-menu li a {
+    display: block;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 0.5em 1em;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.top-nav .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    color:#FF5722;
+    border: none;
+    background: none;
+}
+.top-nav .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+	color: #FF5722;
+	background-color:transparent;
+	text-decoration:none;
+}
+.navbar-right { 
+    margin-right: 0;
+}
+/*-- //top-nav --*/
+/*-- banner-text --*/  
+.banner-w3text{
+	padding: 15.08em 0;
+	text-align: left;
+}
+.w3l-agile h2 {
+	color:#fff;
+	font-size: 4em;
+	letter-spacing: 5px;
+	font-weight: 600;
+	text-shadow: 1px 4px 11px rgb(113, 111, 111);
+}
+.w3l-agile h2 span {
+	color: #42efae;
+	font-size: 0.7em;
+}
+.banner-pw3l {
+	margin-top: 1em;
+}
+.banner-pw3l p {
+	color: #fff;
+	font-size: 1.1em;
+	letter-spacing: 2px;
+}
+.w3lsmore {
+	margin-top: 3em;
+	padding-bottom: 1px;
+}
+.w3lsmore a {
+	font-size: 1em;
+    color: #fff;
+    letter-spacing: 3px;
+    padding: .8em 2.5em;
+    margin: 0 auto;     /*--水平居中--*/
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    display: inline-block;
+    -moz-osx-font-smoothing: grayscale; /*--字体更加清晰--*/
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility: hidden;
+}
+/* Pipaluk */
+.button-pipaluk::before , .button-pipaluk::after {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	transition: transform 0.5s, background-color 0.5s;
+	-webkit-transition: transform 0.5s, background-color 0.5s;
+	-moz-transition: transform 0.5s, background-color 0.5s;
+	transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1);
+	-webkit-transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1);
+	-moz-transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1);
+}
+.button-pipaluk::before {
+	border: 2px solid #ff6b6b;
+}
+.button-pipaluk.button--inverted::after {
+	background: #ff6b6b;
+}
+.button-pipaluk:hover::before {
+	transform: scale3d(1, 1, 1);
+	-webkit-transform: scale3d(1, 1, 1);
+	-moz-transform: scale3d(1, 1, 1);
+	-o-transform: scale3d(1, 1, 1);
+	-ms-transform: scale3d(1, 1, 1);
+}
+.button-pipaluk::before,
+.button-pipaluk:hover::after {
+	transform: scale3d(0.7, 0.6, 1);
+	-webkit-transform: scale3d(0.7, 0.6, 1);
+	-moz-transform: scale3d(0.7, 0.6, 1);
+	-o-transform: scale3d(0.7, 0.6, 1);
+	-ms-transform: scale3d(0.7, 0.6, 1);
+}
+/*--modal--*/
+.modal-content  img {
+	width:100%;
+}
+.modal-content h4 {
+	color: #000;
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: .5em;
+	text-transform: uppercase;
+}
+.modal-content h5 {
+	color: #ff6b6b;
+	padding-top: 15px;
+	font-size: 21px;
+}
+.modal-content p {
+	padding-top:10px;
+	color: #000;
+	text-indent: 2em;
+}
+.modal-header {
+	padding: 30px;
+}
+/*--//modal--*/
+/*-- //banner-text --*/
+/*-- stats --*/ 
+.stats {
+    background: #669;
+    padding: 3em 0;
+}
+.stats-agileinfo {
+	text-align: left;
+}
+.stats-agileinfo h6 {
+	color: #fff;
+	font-size: 1.2em;
+	letter-spacing: 4px;
+	margin: .5em 0 0;
+}
+.numscroller {
+	font-size: 3em;
+	font-weight: 600;
+	color: #fff;
+}
+/*-- //stats --*/
+/*-- about --*/
+.about, .middle-w3l, .gallery, .team, .testimonials, .contact {
+	padding: 5em 0;
+}
+h3.about-titlew3 {
+	color: #000;
+	font-size: 3em;
+	letter-spacing: 1px;
+	font-weight: 600;
+	margin-bottom: 1em;
+}
+h3.about-titlew3 span {
+	display: block;
+	color: red;
+	text-indent: 2em;
+}
+.about-right {
+	padding: 0 1em 0 0;
+}
+.about-right h5 {
+	color:#000;
+	font-size: 1.3em;
+	letter-spacing: 1px;
+	line-height: 1.8;
+}
+.about-right h5 span {
+	font-weight: 700;
+}
+h3.agile-title {
+    color: #111;
+    font-size: 3.3em;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+	text-align: left;
+	position:relative;
+}
+h3.agile-title::before {
+	content: " ";
+	background: #47cf73;
+	position: absolute;
+	width: 6%;
+	height: 2px;
+	top: 115%;
+}
+.about-left p {
+	font-size: 1.1em;
+	color: #000;
+	margin: 0 0 1.5em;
+	text-indent: 2em;
+}
+/*-- //about --*/
+/*-- middle --*/
+.middle-w3 {
+	background: #ff6b6b;
+}
+.about-right-w3-agileits {
+	background: #fff;
+	margin: 2em 0 3em ;
+	text-align: center;
+}
+.about-left-w3-agile h6 {
+	margin-top: 1em;
+	font-size: 2em;
+	color: #42efae;
+}
+.about-left-w3-agile h3 {
+	font-size: 1.4em;
+	letter-spacing: 1px;
+	color: #000;
+	margin: 1.2em 0;
+}
+.slider-w3-agile {
+	color: #000;
+	font-size: 1.1em;
+	text-indent: 2em;
+	letter-spacing: 1px;
+	text-align: left;
+}
+.about-right-w3-agileits img {
+	height: 400px;
+	width: 600px;
+}
+/*-- slider --*/
+.slide-w3{
+	height: 400px;
+}
+.left{
+text-shadow:none;
+}
+.carousel-control.right, .carousel-control.left{
+background-image: none;
+}
+/*-- //slider --*/
+/*-- //middle --*/
+/*-- gallery --*/
+ h3.title-w3-agile {
+	color: #000;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-align: left;
+    position: relative;
+    margin-bottom: 1em;
+}
+h3.title-w3-agile:before {
+    content: "";
+    width: 59px;
+    height: 2px;
+    display: block;
+    background: #000;
+    position: absolute;
+    left: 20px;
+	bottom: -9px;
+	z-index: 2;
+}
+h3.title-w3-agile:after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    display: block;
+    background: #ff6b6b;
+    position: absolute;
+	top: 48px;
+	z-index: 2;
+}
+.w3gallery-grids img {
+	width: 500px;
+	height: 280px;
+}
+/*-- imghvr-hinge --*/
+.agile-figcaption {
+	background: #000;
+	text-align: center;
+	padding: 1em 0;
+	transition: .5s all;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+}
+.agile-figcaption:hover {
+	background: #ff6b6b;
+	transition: .5s all;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+}
+[class^='imghvr'] >img,
+[class*='imghvr-'] > img {
+	vertical-align: top; /*-- 设置元素垂直对齐方式 --*/
+	max-width: 100%;
+	display: block;
+}
+[class^='imghvr'] .agile-figcaption h4 {
+	font-size: 1.5em;
+	margin-bottom: 0.3em;
+	font-weight: 600;
+	color: #42efae;	
+}
+[class^='imghvr-'] .agile-figcaption p{
+	color: #fff;
+	line-height: 2em;
+	letter-spacing: 3px;
+}
+[class^='imghvr-'] a,
+[class*=' imghvr-'] a {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+}
+/*-- //gallery --*/
