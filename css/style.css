@@ -360,6 +360,15 @@ h3.title-w3-agile:after {
 	-moz-transition: .5s all; 
     transition: .5s all; 
 }
+.agile-figcaption-item {
+	background: #000;
+	text-align: center;
+	height: 300px;
+}
+.agile-figcaption-item img {
+	width: 100%;
+	height: 100%;
+}
 .agile-figcaption:hover {
     background: #ff6b6b;
 	-webkit-transition: .5s all;
@@ -405,11 +414,12 @@ h3.title-w3-agile:after {
 .team  h3.title-w3-agile:before, .contact h3.title-w3-agile:before {
     background: #fff;
 }
-.ch-gridss-item img {
-	height: 170px;
+.ch-grids-item .ch-item {
+	height: 180px;
 }
 .ch-item img { 
 	width:100%;
+	height: 100%;
 }
 .ch-info h3 {
     color: #fff;
